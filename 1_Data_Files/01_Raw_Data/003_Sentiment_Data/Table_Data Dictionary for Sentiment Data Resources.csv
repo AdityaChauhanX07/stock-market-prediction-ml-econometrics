@@ -1,0 +1,6 @@
+"Column Name","Data Type","Description"
+"date","Datetime (YYYY-MM-DD HH:MM:SS)","The precise publication timestamp of the news article, timezone UTC-4 as per the source dataset."
+"ticker","Text","The primary stock ticker that the news article is associated with, as mapped in the FNSPID dataset."
+"headline","Text","The full headline of the news article. This column provides the raw text corpus for sentiment analysis."
+"publisher","Text","The news source or publisher of the article (e.g., 'Reuters', 'Benzinga', 'MarketWatch')."
+"url","Text","The direct URL to the source article, allowing for verification and potential retrieval of the full article text."

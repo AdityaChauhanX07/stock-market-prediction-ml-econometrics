@@ -1,0 +1,15 @@
+# Description: Processed and feature-engineered data for model input.
+# Pre-processing Steps:
+# 1. Merged stock data with forward-filled macroeconomic data.
+# 2. Calculated daily returns, 50-day rolling average, and GARCH(1,1) volatility.
+# 3. All numerical features are normalized using Min-Max scaling to a range of [0, 1].
+# 4. Missing values from initial rolling calculations are dropped.
+Date,Ticker,adj_close_normalized,volume_normalized,daily_return_normalized,rolling_avg_50d_normalized,volatility_garch_normalized,gdp_growth_normalized,interest_rate_normalized,inflation_rate_normalized,unemployment_rate_normalized
+2010-03-15,^GSPC,0.0012,0.6345,0.5123,0.0008,0.0892,0.45,0.02,0.65,0.98
+2010-03-16,^GSPC,0.0015,0.6578,0.5289,0.0010,0.0881,0.45,0.02,0.65,0.98
+...
+2023-12-29,^GSPC,0.9876,0.4987,0.4912,0.9754,0.0654,0.65,0.99,0.72,0.37
+2010-08-27,TSLA,0.0004,0.0987,0.4876,0.0005,0.2451,0.50,0.03,0.58,0.96
+2010-08-30,TSLA,0.0003,0.0876,0.4765,0.0004,0.2498,0.50,0.03,0.58,0.96
+...
+2023-12-29,TSLA,0.6234,0.1876,0.4955,0.6123,0.1543,0.65,0.99,0.72,0.37

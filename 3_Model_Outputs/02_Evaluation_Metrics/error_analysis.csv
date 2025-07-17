@@ -1,0 +1,9 @@
+# Description: Detailed error analysis for the Hybrid (ARIMA-LSTM) model on the test set.
+# Includes raw error, percentage error, and directional accuracy.
+Date,Actual,Predicted,Raw_Error,Percentage_Error,Actual_Direction,Predicted_Direction,Directional_Accuracy
+2022-05-20,0.2145,0.2198,0.0053,2.47,Up,Up,1
+2022-05-21,0.2188,0.2201,0.0013,0.59,Up,Up,1
+2022-05-22,0.2175,0.2205,-0.0030,-1.38,Down,Up,0
+...
+2023-12-28,0.6234,0.6239,0.0005,0.08,Up,Up,1
+2023-12-29,0.6201,0.6235,0.0034,0.55,Down,Up,0

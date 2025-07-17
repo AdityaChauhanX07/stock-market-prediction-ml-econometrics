@@ -1,0 +1,8 @@
+# Source: Various financial news outlets and social media platforms.
+# This file provides links to the sources of sentiment data. Direct data is not included due to size and proprietary restrictions.
+Source,DataType,Link,Notes
+Bloomberg News,Financial News Headlines,"https://www.bloomberg.com/markets/economics","API access required for historical data"
+Reuters,Financial News Headlines,"https://www.reuters.com/business/finance/","API access required for historical data"
+Wall Street Journal,Financial News Headlines,"https://www.wsj.com/news/markets","Subscription and API access required"
+Twitter (X) API,Social Media Posts,"https://developer.twitter.com/en/docs/twitter-api","Historical data available through enterprise solutions"
+StockTwits API,Social Media Posts,"https://api.stocktwits.com/developers/docs","Developer access required for sentiment data"

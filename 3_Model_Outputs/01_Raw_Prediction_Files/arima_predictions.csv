@@ -1,0 +1,8 @@
+# Description: Raw predictions from the ARIMA(5,1,0) model for TSLA.
+# The 'Actual' column is the true normalized price, and 'Predicted' is the forecast.
+Date,Actual,Predicted
+2022-03-15,0.2789,0.2754
+2022-03-16,0.2921,0.2801
+...
+2023-12-28,0.6234,0.6211
+2023-12-29,0.6201,0.6230

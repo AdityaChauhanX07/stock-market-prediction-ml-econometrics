@@ -1,0 +1,105 @@
+{
+  "model_type": "Hybrid ARIMA-LSTM",
+  "framework": "TensorFlow/Keras + statsmodels",
+  "created_date": "2025-07-17",
+  "arima_order": [2, 1, 1],
+  "lstm_units": 64,
+  "sequence_length": 15,
+  "training_samples": 1000,
+  "validation_split": 0.2,
+  "arima_params": [
+    0.15234567,
+    -0.08765432,
+    0.23456789,
+    -0.12345678,
+    0.87654321
+  ],
+  "lstm_architecture": {
+    "layers": [
+      {
+        "type": "LSTM",
+        "units": 64,
+        "return_sequences": true,
+        "dropout": 0.2
+      },
+      {
+        "type": "LSTM",
+        "units": 32,
+        "return_sequences": false,
+        "dropout": 0.2
+      },
+      {
+        "type": "Dense",
+        "units": 25,
+        "activation": "relu"
+      },
+      {
+        "type": "Dense",
+        "units": 1,
+        "activation": "linear"
+      }
+    ]
+  },
+  "training_config": {
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "loss_function": "mse",
+    "metrics": ["mae"],
+    "batch_size": 32,
+    "epochs": 100,
+    "early_stopping": {
+      "monitor": "val_loss",
+      "patience": 10,
+      "restore_best_weights": true
+    },
+    "reduce_lr": {
+      "monitor": "val_loss",
+      "factor": 0.5,
+      "patience": 5,
+      "min_lr": 0.0001
+    }
+  },
+  "data_preprocessing": {
+    "scaler_type": "MinMaxScaler",
+    "residual_scaler": "MinMaxScaler",
+    "sequence_length": 15,
+    "features": ["time_series_values"]
+  },
+  "model_performance": {
+    "final_train_loss": 0.0234,
+    "final_val_loss": 0.0456,
+    "final_train_mae": 0.123,
+    "final_val_mae": 0.167,
+    "training_time_seconds": 245.67,
+    "total_parameters": 8945
+  },
+  "arima_diagnostics": {
+    "aic": 2845.67,
+    "bic": 2867.89,
+    "log_likelihood": -1418.84,
+    "residuals_ljung_box_pvalue": 0.234,
+    "residuals_jarque_bera_pvalue": 0.456
+  },
+  "model_usage": {
+    "input_requirements": {
+      "arima_input": "Single value representing ARIMA forecast",
+      "lstm_input": "Sequence of 15 residual values, shape (1, 15, 1)"
+    },
+    "output_format": "Single predicted value",
+    "prediction_horizon": "1 step ahead",
+    "recommended_use": "Time series forecasting with both linear and non-linear components"
+  },
+  "file_info": {
+    "model_file": "hybrid_model.h5",
+    "file_size_mb": 0.45,
+    "keras_version": "2.15.0",
+    "tensorflow_version": "2.15.0",
+    "python_version": "3.9.16"
+  },
+  "notes": {
+    "description": "This hybrid model combines ARIMA for capturing linear trends and seasonal patterns with LSTM for modeling non-linear residual patterns.",
+    "training_data": "Synthetic time series with trend, seasonal, and noise components",
+    "limitations": "Model trained on synthetic data - may need retraining for real-world applications",
+    "recommendations": "Fine-tune hyperparameters based on your specific time series characteristics"
+  }
+}

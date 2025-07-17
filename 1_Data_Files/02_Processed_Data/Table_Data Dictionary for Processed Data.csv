@@ -1,0 +1,23 @@
+Column Name,Data Type,Description,Unit / Range
+Date,Date,The trading date.,YYYY-MM-DD
+Ticker,Text,The stock or index symbol.,"^GSPC, ^IXIC, TSLA"
+Open,Float,Opening price.,Scaled
+High,Float,Highest daily price.,Scaled
+Low,Float,Lowest daily price.,Scaled
+Close,Float,Closing price.,Scaled
+Adj Close,Float,Adjusted closing price.,Scaled
+Volume,Float,Trading volume.,Scaled
+Daily_Return,Float,"Percentage change in Adj Close from the previous day.",Scaled
+FEDFUNDS,Float,Daily Federal Funds Effective Rate (forward-filled).,Scaled
+GDPC1,Float,Daily Real Gross Domestic Product (forward-filled).,Scaled
+CPIAUCSL,Float,Daily Consumer Price Index (forward-filled).,Scaled
+Sentiment_Score,Float,Mean daily sentiment score from news headlines.,Scaled
+MA_20,Float,"20-day simple moving average of Adj Close.",Scaled
+MA_50,Float,"50-day simple moving average of Adj Close.",Scaled
+Volatility_20D,Float,"20-day rolling standard deviation of Daily_Return.",Scaled
+RSI_14,Float,14-day Relative Strength Index.,Scaled
+MACD,Float,MACD line.,Scaled
+MACD_Signal,Float,MACD signal line.,Scaled
+MACD_Hist,Float,"MACD histogram (MACD – Signal).",Scaled
+GARCH_Volatility,Float,"Conditional volatility estimated from a GARCH(1,1) model.",Scaled
+ARIMA_Residuals,Float,"Residuals from an ARIMA model fitted on Adj Close.",Scaled

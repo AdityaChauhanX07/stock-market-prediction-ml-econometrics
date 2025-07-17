@@ -1,0 +1,12 @@
+# Description: Results from a grid search for hyperparameter optimization of the LSTM model.
+# The goal was to find the combination of parameters that minimized the validation loss (val_loss).
+# The best performing model (highlighted by the lowest val_loss) was selected for the final training.
+Trial_ID,LSTM_Units,Dropout_Rate,Batch_Size,Optimizer,Validation_Loss
+1,32,0.2,32,adam,0.0025
+2,32,0.3,32,adam,0.0028
+3,50,0.2,32,adam,0.0019
+4,50,0.3,32,adam,0.0022
+5,50,0.2,64,adam,0.0021
+6,100,0.2,32,adam,0.0024
+7,100,0.3,64,adam,0.0029
+8,50,0.2,32,rmsprop,0.0026

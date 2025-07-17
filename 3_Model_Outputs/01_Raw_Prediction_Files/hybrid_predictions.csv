@@ -1,0 +1,8 @@
+# Description: Raw predictions from the Hybrid (ARIMA-LSTM) model for TSLA.
+# These predictions incorporate ARIMA residuals as a feature for the LSTM.
+Date,Actual,Predicted
+2022-05-20,0.2145,0.2198
+2022-05-21,0.2188,0.2201
+...
+2023-12-28,0.6234,0.6239
+2023-12-29,0.6201,0.6235

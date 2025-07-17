@@ -1,0 +1,4 @@
+"Indicator","FRED ID","Native Frequency","Unit","Source Link"
+"Federal Funds Effective Rate","FEDFUNDS","Monthly","Percent, Not Seasonally Adjusted","https://fred.stlouisfed.org/series/FEDFUNDS"
+"Real Gross Domestic Product","GDPC1","Quarterly","Billions of Chained 2017 Dollars, Seasonally Adjusted Annual Rate","https://fred.stlouisfed.org/series/GDPC1"
+"Consumer Price Index","CPIAUCSL","Monthly","Index 1982-1984=100, Seasonally Adjusted","https://fred.stlouisfed.org/series/CPIAUCSL"

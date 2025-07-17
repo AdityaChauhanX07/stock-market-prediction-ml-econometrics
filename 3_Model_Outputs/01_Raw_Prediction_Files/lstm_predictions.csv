@@ -1,0 +1,8 @@
+# Description: Raw predictions from the standalone LSTM model for TSLA.
+# Values are based on the test set.
+Date,Actual,Predicted
+2022-05-20,0.2145,0.2231
+2022-05-21,0.2188,0.2245
+...
+2023-12-28,0.6234,0.6255
+2023-12-29,0.6201,0.6249
