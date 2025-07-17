@@ -140,7 +140,9 @@ Developing Predictive Models for Stock Market Behavior Using Machine Learning an
 
 ## License
 
-This research data and code are licensed under **CC BY (Attribution)**. You are free to share, copy, redistribute, adapt, remix, transform, and build upon the material for any purpose, even commercially, as long as you provide appropriate credit to the original authors, provide a link to the license, and indicate if changes were made.
+This research data and code are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You are free to share, copy, redistribute, adapt, remix, transform, and build upon the material for any purpose, even commercially, as long as you provide appropriate credit to the original authors, provide a link to the license, and indicate if changes were made.
+
+For more details, see the [LICENSE](./LICENSE) file in this repository.
 
 **Citation**: When using this dataset or code, please cite the original research paper and provide attribution to the author.
 
