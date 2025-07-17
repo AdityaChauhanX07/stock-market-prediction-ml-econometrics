@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this research project, please cite it as below."
+title: "Developing Predictive Models for Stock Market Behavior Using Machine Learning and Econometrics"
+authors:
+  - family-names: Chauhan
+    given-names: Aditya
+    orcid: "https://orcid.org/0009-0005-8790-1083"
+date-released: 2025-07-17
+version: "1.0.0"
+repository-code: "https://github.com/AdityaChauhanX07/stock-market-prediction-ml-econometrics"
+license: CC-BY-4.0
+type: dataset
+abstract: "Predicting stock market behavior remains a formidable challenge due to its volatility and multifactorial nature. This paper introduces a novel hybrid framework that integrates machine learning techniques, including Long Short-Term Memory (LSTM) networks and Gradient Boosting Machines, with econometric models like ARIMA and GARCH. By combining the strengths of these approaches, we address non-linear dependencies while ensuring robust time-series analysis. Using a comprehensive dataset of historical stock prices, macroeconomic indicators, and sentiment data, our findings reveal that the hybrid model outperforms traditional standalone methods, achieving up to 20% higher predictive accuracy. This framework not only uncovers critical insights into the interplay between macroeconomic trends and sentiment-driven market shifts but also provides actionable tools for investors and policymakers, bridging the gap between computational intelligence and traditional financial modeling."
+keywords:
+  - stock market prediction
+  - machine learning
+  - econometrics
+  - hybrid models
+  - LSTM
+  - ARIMA
+  - GARCH
+  - financial forecasting
+  - time series analysis
+  - sentiment analysis
