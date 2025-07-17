@@ -139,6 +139,9 @@ Developing Predictive Models for Stock Market Behavior Using Machine Learning an
 - Consider using data sampling for initial experimentation
 - Monitor system resources during intensive model training phases
 
+## Research Paper
+The complete research paper is available here: [research-paper.pdf](./research-paper.pdf)
+
 ## License
 
 This research data and code are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You are free to share, copy, redistribute, adapt, remix, transform, and build upon the material for any purpose, even commercially, as long as you provide appropriate credit to the original authors, provide a link to the license, and indicate if changes were made.
